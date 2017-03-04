@@ -13,3 +13,12 @@ body{
 	font-size: 40px;
 	font-weight: 900;
 }
+.card_images{
+	padding-top: 50px;
+}
+.card_images img{
+	display: none;
+}
+#card_1_0{
+	display: inline-block;
+}
