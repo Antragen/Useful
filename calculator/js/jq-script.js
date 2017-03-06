@@ -28,6 +28,11 @@ $(function() {
 			$( '.card_images img' ).hide();
 			$( '#card_4_1' ).show();
 		}
+		// for git
+		if ( $color_format == 4 ) {
+			$( '.card_images img' ).hide();
+			$( '#card_4_1' ).show();
+		}
 
 		if ( $color_format == 5 ) {
 			$( '.card_images img' ).hide();
