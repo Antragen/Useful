@@ -9,8 +9,10 @@ $(function() {
 		$print = $( 'select#card_color option:selected' ).attr( 'data-print' );
 		$division = 30;
 		$final_edition = $edition / $division;
-		$price = $final_edition * $paper_ratio + parseInt( $print_file ) + $print;
-		document.getElementById('final_price').innerHTML = $final_edition;
+		$price = $final_edition * $paper_ratio + parseInt( $print_file ) + $final_edition * $print;
+		
+		$( '#final_price' ).text($price);
+		
 		if ( $color_format == 1 ) {
 			$( '.card_images img' ).hide();
 			$( '#card_1_0' ).show();
